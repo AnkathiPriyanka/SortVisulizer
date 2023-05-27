@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="E:\FULL Stack\web development\SudukoSolver\SortVizulizer\style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="E:\FULL Stack\web development\SudukoSolver\SortVizulizer\assets\favicon_io\favicon.ico" type="image/x-icon">
+
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+
+    <div class="container">
+      <!-- image conatiner -->
+      <div id="image-container">
+        <img src="E:\FULL Stack\web development\SudukoSolver\SortVizulizer\assets\coollogo_com-14186422.png " alt="Image" />
+    </div>
+        <!-- Array container -->
+        <div id="array-container">
+            <div id="array"></div>
+            <h5 id="no-algo-warning" class="display-none">No Algorithm Selected!</h5>
+        </div>
+
+        <!-- Algorithm container -->
+        <div id="algo-container">
+            <button class="algo-btn btn btn-outline-secondary">Bubble Sort</button>
+            <button class="algo-btn btn btn-outline-secondary">Selection Sort</button>
+            <button class="algo-btn btn btn-outline-secondary">Insertion Sort</button>
+            <button class="algo-btn btn btn-outline-secondary">Merge Sort</button>
+            <button class="algo-btn btn btn-outline-secondary">Quicksort</button>
+            <button class="algo-btn btn btn-outline-secondary">Heapsort</button>
+            <button id="sort" class="btn btn-primary">Sort</button>
+        </div>
+
+        <!-- Change container -->
+        <div id="change-container">
+            <button id="randomize" class="btn btn-danger">Randomize</button>
+
+            <div id="sliders">
+                <!-- Array size slider -->
+                <div class="slider-container">
+                    <label for="size-slider">Array Size</label>
+                    <input type="range" id="size-slider" class="slider" min="10" max="3000" value="50">
+                </div>
+
+                <!-- Speed slider -->
+                <div class="slider-container">
+                    <label for="speed-slider">Speed</label>
+                    <input type="range" id="speed-slider" class="slider" min="1" max="2000" value="10">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript files -->
+    <script src="assets/script.js"></script>
+    <script src="assets/bubble-sort.js"></script>
+    <script src="assets/selection-sort.js"></script>
+    <script src="assets/insertion-sort.js"></script>
+    <script src="assets/merge-sort.js"></script>
+    <script src="assets/quicksort.js"></script>
+    <script src="assets/heapsort.js"></script>
+</body>
+</html>
