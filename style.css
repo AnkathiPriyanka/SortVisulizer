@@ -23,13 +23,12 @@
 
 
 body {
-  background-image: url("assests/pexels-codioful-(formerly-gradienta)-7130490.jpg");
+  background-image: url("assets/pexels-codioful-(formerly-gradienta)-7130490.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%; /* Adjusted background-size value */
   font-family: "Catamaran", sans-serif;
   backdrop-filter: blur(1px); /* Adjust the blur amount as desired */
 }
-
 
 
 .container {
