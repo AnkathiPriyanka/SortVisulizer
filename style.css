@@ -5,6 +5,10 @@
 .display-none {
     display: none;
 }
+ #timer {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
 
 .display-flex {
     display: flex;
